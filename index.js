@@ -14,5 +14,3 @@ delay(() => {
   return delay(() => console.log('e'));
 });
 console.log('b');
-
-// second
