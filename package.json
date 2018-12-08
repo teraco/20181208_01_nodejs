@@ -13,6 +13,8 @@
   "author": "teraco",
   "license": "MIT",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
+    "dotenv": "^6.2.0",
     "puppeteer": "^1.11.0"
   },
   "devDependencies": {
