@@ -4,6 +4,7 @@ const puppeteer = require('puppeteer');
 const USER_ID = process.env.MY_USER_ID;
 const PASSWORD = process.env.MY_PASSWORD;
 const SENDGRID_API_KEY = process.env.MY_APIKEY;
+const EMAIL = process.env.MY_EMAIL;
 
 // using SendGrid's v3 Node.js Library
 // https://github.com/sendgrid/sendgrid-nodejs
@@ -59,8 +60,8 @@ sgMail.setApiKey(SENDGRID_API_KEY);
 })(); // 最後の()は定義した関数の即時実行
 
 const msg = {
-  to: 'teraco@gmail.com',
-  from: 'teraco@gmail.com',
+  to: EMAIL,
+  from: EMAIL,
   subject: 'Sending with SendGrid is Fun(APIKEY)',
   text: 'and easy to do anywhere, even with Node.js',
   html: '<strong>and easy to do anywhere, even with Node.js</strong>',
